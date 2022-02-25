@@ -10,17 +10,17 @@ class Product extends Component {
 
   render() {
     return (
-      <div>
-        <div className="row m-5">
-          <div class="card w-25">
-            <img src={this.props.product.img} class="card-img-top w-75" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                <div className="">
-                  <Link to={`/productt/${this.props.product.id}`}>
-                    {this.props.product.name}
-                  </Link>
-                </div>
+      <React.Fragment>
+        <div className="">
+          <div class="card border border-3">
+           <div className="w-100"> 
+              <img src={this.props.product.img} className="card-img-top w-100 h-100" />
+           </div>
+            <div className="card-body">
+              <p className="card-text">
+                <Link to={`/productt/${this.props.product.id}`}>
+                  {this.props.product.name}
+                </Link>
               </p>
 
               <h5 class="card-title">
@@ -29,22 +29,21 @@ class Product extends Component {
 
               <div
                 onClick={() => this.props.onIcreament(this.props.product)}
-                className="btn btn-primary btn-lg m-2"
+                className="btn btn-primary btn-lg "
               >
                 <i className="fas fa-plus"></i>
               </div>
 
               <span
-                className="m-5 p-3 btn-warning "
+                className=" btn btn-warning btn-lg float-end"
                 onClick={() => this.props.onDelete(this.props.product)}
               >
                 <i className="fas fa-trash-alt"></i>
               </span>
             </div>
           </div>
-          
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

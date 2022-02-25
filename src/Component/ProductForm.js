@@ -16,6 +16,7 @@ class ProductForm extends Component {
       const state = { ...this.state };
       state.name = data.name;
       state.count = data.count;
+      state.img = data.img;
       this.setState(state);
     }
   }
@@ -89,6 +90,21 @@ class ProductForm extends Component {
                 type="text"
                 className="form-control"
                 id="count"
+              />
+            </div>
+            
+            <div className="form-group mt-3">
+              <label htmlFor="img" className="mb-2">
+                product img{" "}
+              </label>
+              <input
+                name="img"
+                onChange={this.handleChange}
+                value={this.state.img}
+                type="text"
+                className="form-control"
+                id="img"
+                placeholder="img-URL"
               />
             </div>
 

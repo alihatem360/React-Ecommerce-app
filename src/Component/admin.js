@@ -34,14 +34,14 @@ class Admin extends Component {
                     <Link to={`/product/${p.id}`}>
                       
                       <i
-                        className="fas fa-edit"
+                        className="fas fa-edit btn bg-danger btn-lg"
                         onClick={() => this.props.onEdited(p.id)}
                       ></i>
                     </Link>
                   </td>
                   <td>
                     <span
-                      className="px-3 pb-3 pt-2 btn-warning"
+                      className="btn btn-warning btn-lg"
                       onClick={() => this.props.onDelete(p)}
                     >
                       <i className="fas fa-trash-alt"></i>
