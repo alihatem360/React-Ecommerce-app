@@ -20,3 +20,6 @@
 Demo : [https://codesandbox.io/s/o1wzq](https://codesandbox.io/s/o1wzq)
 
 ### Preview
+![image](https://user-images.githubusercontent.com/68661572/155785024-3b00fe19-0cc4-427b-be1a-ee5fca1da3b4.png)
+![image](https://user-images.githubusercontent.com/68661572/155785078-f9904e0a-aa4e-45df-a4b8-7c7623800ee6.png)
+![image](https://user-images.githubusercontent.com/68661572/155785136-9d133c4d-362d-4adf-8514-3f4abc92687a.png)
